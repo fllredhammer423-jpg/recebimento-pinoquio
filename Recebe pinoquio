@@ -1,0 +1,5 @@
+radio.setGroup(30)
+
+radio.onReceivedNumber(function (receivedNumber) {
+    pins.analogWritePin(AnalogPin.P2, receivedNumber * 10)
+})
